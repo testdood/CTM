@@ -23,12 +23,14 @@ namespace CTM.Classes
         public string yourResultsPage = "https://energy.comparethemarket.com/energy/v2/yourResults?AFFCLIE=TST";
 
         #region *** XPaths ***
-        public string XP_NEXT_BUTTON { get; set; } = ".//*[@id='goto-your-supplier-details']";
+        // public string XP_NEXT_BUTTON { get; set; } = ".//*[@id='goto-your-supplier-details']";
+        public string XP_NEXT_BUTTON { get; set; } = ".//*[@ng-click='ctrl.MoveToNextPage();']";
+        
         #endregion
 
         #region *** Public Methods ***
 
-        public bool NavigateToPage( string page)
+        public bool NavigateToPage(string page)
         {
             switch (page)
             {
@@ -56,7 +58,6 @@ namespace CTM.Classes
                     WebBrowser.Current.FindElement(By.XPath(XP_NEXT_BUTTON)).Displayed.Equals(true);
                     return true;
             }
-
             return false;
         }
 

@@ -16,7 +16,6 @@ namespace CTM.Classes
         private IWebDriver driver;
         private readonly string WebUrl;
 
-
         #region *** Xpaths ***
 
         #endregion

@@ -66,12 +66,12 @@ namespace CTM_TST.specs.Features
         
         public virtual void FeatureBackground()
         {
+#line 6
 #line 7
-#line 8
  testRunner.Given("the user is on the \'Your Supplier\' page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 9
+#line 8
  testRunner.And("the postcode field is empty", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 10
+#line 9
  testRunner.And("the Next button is disabled", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
         }
@@ -87,9 +87,9 @@ namespace CTM_TST.specs.Features
                         "Energy",
                         "Electricity",
                         "Gas"});
-#line 15
+#line 14
 this.ScenarioSetup(scenarioInfo);
-#line 7
+#line 6
 this.FeatureBackground();
 #line hidden
             TechTalk.SpecFlow.Table table1 = new TechTalk.SpecFlow.Table(new string[] {
@@ -112,11 +112,11 @@ this.FeatureBackground();
                         "SUPPLIER_ELEC",
                         "Who supplies your electricity?",
                         "EDF Energy"});
-#line 16
+#line 15
  testRunner.When("the user has set the Your Supplier details to the following:", ((string)(null)), table1, "When ");
-#line 24
+#line 23
  testRunner.And("the user clicks on the Next button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 25
+#line 24
  testRunner.Then("the user is able to progress to the \'Electricity\' section of the Your Energy step" +
                     "", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
@@ -156,11 +156,11 @@ this.FeatureBackground();
                         "BILL_DATE_ELEC",
                         "Please enter the bill date which can be found...",
                         "1 January, 2017"});
-#line 26
+#line 25
  testRunner.When("the user sets the electricity details to the following:", ((string)(null)), table2, "When ");
-#line 36
+#line 35
  testRunner.When("the user clicks on the Next button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 37
+#line 36
  testRunner.Then("the user is able to progress to the \'Gas\' section of the Your Energy step", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             TechTalk.SpecFlow.Table table3 = new TechTalk.SpecFlow.Table(new string[] {
@@ -195,11 +195,11 @@ this.FeatureBackground();
                         "BILL_DATE_GAS",
                         "Please enter the bill date which can be found...",
                         "03/12/2106"});
-#line 38
+#line 37
  testRunner.When("the user sets the gas details to the following:", ((string)(null)), table3, "When ");
-#line 47
+#line 46
  testRunner.When("the user clicks on the Next button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 48
+#line 47
  testRunner.Then("the user is able to progress to the \'Your Details\' step", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             TechTalk.SpecFlow.Table table4 = new TechTalk.SpecFlow.Table(new string[] {
@@ -226,11 +226,11 @@ this.FeatureBackground();
                         "TERMS_CONDITIONS",
                         "Please tick this box to confirm you have read and understood...",
                         "True"});
-#line 49
+#line 48
  testRunner.When("the user sets the \'Your Preferences\' details to the following:", ((string)(null)), table4, "When ");
-#line 56
+#line 55
  testRunner.When("the user clicks on the \'Go to prices\' button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 57
+#line 56
  testRunner.Then("the \'Your Results\' page is displayed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             TechTalk.SpecFlow.Table table5 = new TechTalk.SpecFlow.Table(new string[] {
@@ -257,9 +257,9 @@ this.FeatureBackground();
                         "PAY_METHOD",
                         "Payment method",
                         "Monthly direct debit"});
-#line 58
+#line 57
  testRunner.And("the \'Current tariff and usage\'  panel matches the details given by the user:", ((string)(null)), table5, "And ");
-#line 65
+#line 64
  testRunner.And("the \'Your Results\' page contains prices", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
             TechTalk.SpecFlow.Table table6 = new TechTalk.SpecFlow.Table(new string[] {
@@ -274,7 +274,7 @@ this.FeatureBackground();
                         "TARIFF_TYPE_FILTER",
                         "Tariff type",
                         "All"});
-#line 66
+#line 65
  testRunner.And("the filter values match the values set in the Your Preferences step:", ((string)(null)), table6, "And ");
 #line hidden
             this.ScenarioCleanup();

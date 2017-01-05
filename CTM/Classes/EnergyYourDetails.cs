@@ -13,6 +13,7 @@ namespace CTM.Classes
     {
         private static readonly String Url = "";
 
+        //Constructor
         public EnergyYourDetails(IWebDriver driver) : base (driver, Url)
         {
         }

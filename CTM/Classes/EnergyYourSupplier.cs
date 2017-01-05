@@ -10,13 +10,13 @@ using OpenQA.Selenium.Firefox;
 using OpenQA.Selenium.Support.UI;
 using CTM.Classes;
 
-
 namespace CTM.Classes
 {
      public class EnergyYourSupplier : BasePage
     {
         private static readonly String Url = "";
 
+        //Constructor
         public EnergyYourSupplier(IWebDriver driver) :base (driver, Url)
         {
         }
@@ -57,7 +57,6 @@ namespace CTM.Classes
         {
             bool result = WebBrowser.Current.FindElement(By.XPath(XP_NEXT_BUTTON)).Enabled;
             return result;
-
         }
 
         public bool EnterYourSupplierData(string field, string value)
@@ -117,7 +116,7 @@ namespace CTM.Classes
                 case "SAME_SUPPLIER":
                     if (value == "Yes")
                     {
-                       IWebElement elem =  WebBrowser.Current.FindElement(By.XPath(XP_YOUR_SUPPLIER_SAME_SUPPLIER_YES));
+                        IWebElement elem = WebBrowser.Current.FindElement(By.XPath(XP_YOUR_SUPPLIER_SAME_SUPPLIER_YES));
                         String js = "arguments[0].style.height='auto'; arguments[0].style.visibility='visible';";
                         ((IJavaScriptExecutor)WebBrowser.Current).ExecuteScript(js, elem);
                         elem.Click();
@@ -128,9 +127,6 @@ namespace CTM.Classes
                         String js = "arguments[0].style.height='auto'; arguments[0].style.visibility='visible';";
                         ((IJavaScriptExecutor)WebBrowser.Current).ExecuteScript(js, elem);
                         elem.Click();
-
-                        // WebBrowser.Current.FindElement(By.XPath(XP_YOUR_SUPPLIER_SAME_SUPPLIER_NO)).Click();
-                        // WebDriverWait.Equals(true, WebBrowser.Current.FindElement(By.XPath(XP_YOUR_SUPPLIER_ELEC_SUPPLIER)).Displayed);
                     }
                     else
                     {
@@ -144,7 +140,6 @@ namespace CTM.Classes
                         ((IJavaScriptExecutor)WebBrowser.Current).ExecuteScript("scroll(0,600)");
                         WebBrowser.Current.FindElement(By.XPath(String.Format(XP_YOUR_SUPPLIER_ELEC_SUPPLIER, value))).Click();
                     }
-
                     catch (Exception)
                     {
                         throw new ArgumentException("Unable to find object with Xpath supplied");
@@ -185,8 +180,7 @@ namespace CTM.Classes
             throw new ArgumentException("Invalid argument passed to method");
             
         }
-        #endregion
-
+        
         public bool ClickNextButton()
         {
             try
@@ -201,6 +195,8 @@ namespace CTM.Classes
             }
             return true;
         }
+
+        #endregion
 
         #region *** Private Methods ***
 

@@ -13,12 +13,14 @@ namespace CTM.Classes
     {
         private static readonly String Url = "";
 
+        //Constructor
         public EnergyYourResults(IWebDriver driver) :base (driver, Url)
         {
         }
 
         #region *** XPaths ***
-        public string XP_YOUR_SUPPLIER_TITLE { get; set; } = string.Empty;
+        public string XP_YOUR_RESULTS_TITLE { get; set; } = string.Empty;
+
         #endregion
 
         #region *** Public Methods ***

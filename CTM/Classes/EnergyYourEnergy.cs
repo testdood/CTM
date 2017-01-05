@@ -14,6 +14,7 @@ namespace CTM.Classes
     {
         private static readonly String Url = "";
 
+        // Constructor
         public EnergyYourEnergy(IWebDriver driver) :base (driver, Url)
         {
         }

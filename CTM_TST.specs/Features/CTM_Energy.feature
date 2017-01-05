@@ -3,7 +3,6 @@
 	As a consumer
 	I want to be be able to complete an energy comparison journey that provides energy prices
 
-
 Background: 
 	Given the user is on the 'Your Supplier' page
 	And the postcode field is empty
@@ -68,7 +67,7 @@ Scenario: 01 - Obtain gas and electricity prices - Happy Path
 	| PAY_TYPE_FILTER    | Payment type | Monthly direct debit |
 	| TARIFF_TYPE_FILTER | Tariff type  | All                  |
 
-	# Xpath for Payment type filer on results page is:
+	# NB.Xpath for Payment type filer on results page - try:
 	# html/body/div/div/main/section[2]//*[@class='ng-binding checked' and @for='filter-monthly-payment-type']/span
 
 
